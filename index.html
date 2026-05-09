@@ -1,0 +1,1327 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Ingeniería y Proyectos</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO & Google Crowlers Analitics  -->
+    <meta name="author" content="https://carlos-colmenares-a.netlify.app" />
+
+    <meta
+      name="description"
+      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes de telecomunicaciones"
+    />
+    <meta name="sitedomain" content="https://cycs.netlify.app" />
+    <meta name="organization" content="CYCS & Co." />
+
+    <!-- Meta tags usadas por los buscadores de Google -->
+    <meta name="robots" content="index, follow, all" />
+    <meta name="googlebot" content="index, follow, all" />
+    <meta name="google" content="translate" />
+    <meta name="revisit-after" content="7days" />
+    <meta name="theme-color" content="#ff4c00" />
+    <meta
+      name="google-site-verification"
+      content="google-site-verification=wMVhkMD8X0AHtR33pE_heSfV6RWTk6LfdV9-KZdiV-E"
+    />
+
+    <!-- Meta tags usadas por Apple -->
+    <link
+      rel="apple-touch-icon"
+      href="https://cycs.netlify.app/img/favicon.png"
+    />
+
+    <!-- Meta tags usadas por Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@cycsingenieria" />
+    <meta name="twitter:title" content="CYCS! & Co. | Ingeniería y Proyectos" />
+    <meta name="twitter:creator" content="Ing. Carlos Colmenares A." />
+    <meta
+      name="twitter:description"
+      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes de telecomunicaciones"
+    />
+    <meta
+      name="twitter:image"
+      content="https://cycs.netlify.app/img/about.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Esto es lo que somos.. ¡Excelencia, Seriedad y Responsabilidad!"
+    />
+
+    <!-- Meta tags usadas por LinkedIn e Instagram (Open Graph) -->
+    <meta property="og:url" content="https://cycs.netlify.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CYCS! & Co. | Ingeniería y Proyectos" />
+    <meta
+      property="og:description"
+      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes de telecomunicaciones"
+    />
+    <meta
+      property="og:image"
+      content="https://cycs.netlify.app/img/about.png"
+    />
+    <meta property="og:site" content="@cycsingenieria" />
+
+    <!-- Meta tags de Datos Estructurados -->
+    <meta itemprop="name" content="CYCS! & Co. | Ingeniería y Proyectos" />
+
+    <meta
+      itemprop="description"
+      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes de telecomunicaciones"
+    />
+    <meta itemprop="image" content="https://cycs.netlify.app/img/about.png" />
+    <link rel="canonical" href="https://cycs.netlify.app" />
+
+    <!--: Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Remix Icons  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--: CSS General Styles -->
+    <link rel="stylesheet" href="/assets/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <style>
+      #preloader { 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+        background-color: #080e18; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        z-index: 9999999; 
+        transition: opacity 0.5s ease;
+      }
+      .loader { 
+        width: 50px; 
+        height: 50px; 
+        border: 4px solid rgba(255, 255, 255, 0.1); 
+        border-left-color: #ff4c00; 
+        border-radius: 50%; 
+        animation: spin 1s linear infinite; 
+      }
+      @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+      .preloader-hidden { opacity: 0 !important; pointer-events: none !important; visibility: hidden !important; }
+    </style>
+    <script>
+      function hidePreloader() {
+        var preloader = document.getElementById('preloader');
+        if (preloader) {
+          preloader.classList.add('preloader-hidden');
+          document.body.style.overflow = 'auto';
+          setTimeout(function() { preloader.remove(); }, 500);
+        }
+      }
+      setTimeout(hidePreloader, 3000);
+      window.addEventListener('load', hidePreloader);
+    </script>
+  </head>
+
+  <body class="loading">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <div class="mainBox" id="home">
+      <!-------------------->
+      <!-- HEADER & LOGO  -->
+      <!-------------------->
+
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" class="nav__logo"
+            ><span>Carlos Colmenares A.<sup>&reg;</sup></span><small> Ingenieros</small></a
+          >
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">Inicio</a>
+              </li>
+              <li class="nav__item">
+                <a href="#clients" class="nav__link">Clientes & Proyectos</a>
+              </li>
+              <li class="nav__item">
+                <a href="#galeria" class="nav__link">Obras</a>
+              </li>
+              <li class="nav__item">
+                <a href="./assets/html/servicios.html" class="nav__link"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="./assets/html/nosotros.html" class="nav__link"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="./assets/html/contacto.html" class="nav__link"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+
+            <i class="ri-close-line nav__close" id="nav-close"></i>
+          </div>
+
+          <div class="nav__btns">
+            <!--: Theme change button -->
+            <div class="nav__dark">
+              <span class="change-theme-name"></span>
+              <i
+                class="ri-moon-line change-theme"
+                id="theme-button"
+                aria-label="Cambiar tema claro/oscuro"
+                title="Cambiar tema"
+                role="button"
+                tabindex="0"
+              ></i>
+            </div>
+
+            <!--: Responsive navigation menu button -->
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!----------------------->
+      <!-- whatsapp icon     -->
+      <!----------------------->
+
+      <div class="banner_Icon whatsapp_Texto">
+        <span>¡Contáctanos!</span>
+        <a
+          href="https://api.whatsapp.com/send?phone=584143246396&text=¡Hola!%20¿Como podemos ayudarte?"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Contáctanos por WhatsApp"
+          title="Contáctanos por WhatsApp"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <!--------------------------------------------->
+      <!--: Hero — Swiper fullscreen + overlay    -->
+      <!--------------------------------------------->
+
+      <div class="hero-wrapper">
+        <!-- ── Overlay: texto + CTAs ── -->
+        <div class="hero-content">
+          <p class="hero-content__eyebrow">Más de 25 años de trayectoria</p>
+          <h1 class="hero-content__title">
+            Ingeniería de<br /><em>Seguridad e IA</em>
+          </h1>
+          <p class="hero-content__subtitle">
+            Suministro, instalación y mantenimiento de sistemas críticos de
+            seguridad electrónica, automatizaciones, control de acceso y redes
+            de telecomunicaciones.
+          </p>
+          <div class="hero-content__cta">
+            <a href="./assets/html/servicios.html" class="btn-hero-primary">
+              Conocer Servicios <i class="ri-arrow-right-line"></i>
+            </a>
+            <a href="./assets/html/contacto.html" class="btn-hero-secondary">
+              Contáctanos
+            </a>
+          </div>
+        </div>
+
+        <!-- ── Swiper como fondo ── -->
+        <div class="swiper slideshow1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                loading="eager"
+                itemprop="image"
+                src="./assets/img/swiper/cctv1.png"
+                alt="camaras de video seguridad"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/swiper/cctv2.png"
+                alt="video camaras de seguridad"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/swiper/barrera1.png"
+                alt="control de acceso vehicular"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/swiper/barrera2.png"
+                alt="barrera de control de acceso vehicular"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/swiper/accessCard.png"
+                alt="sistemas de control de acceso"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/swiper/telco.png"
+                alt="Hub de cableado para redes de datos"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/swiper/alarma.png"
+                alt="alarmas contra robo"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/swiper/biometrico.png"
+                alt="control de acceso biometrico para puertas"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/swiper/torniquete2.png"
+                alt="torniquetes de control de acceso peatonal"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/swiper/torniquete1.png"
+                alt="control de acceso peatonal"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- /slideshow1 -->
+      </div>
+      <!-- /hero-wrapper -->
+    </div>
+    <!-- /mainBox -->
+
+    <!------------------------------>
+    <!-- Cards section            -->
+    <!------------------------------>
+
+    <section class="cards" id="cards">
+      <div class="title">
+        <h3 class="scroll-title">Soluciones de Ingeniería</h3>
+      </div>
+
+      <div class="cardsBx">
+        <div class="card">
+          <img
+            loading="lazy"
+            itemprop="image"
+            src="./assets/img/cards/Automatizacion.png"
+            alt="Orquestación de IA y Automatización"
+          />
+          <h3><span>IA</span> & AUTOMATIZACIÓN</h3>
+          <div>
+            <a
+              title="Más información sobre IA y Automatización"
+              class="boton_mostrar"
+              href="./assets/html/automatizaciones.html"
+              >Leer Más</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            loading="lazy"
+            itemprop="image"
+            src="./assets/img/cards/SistemasCriticos.png"
+            alt="Modernización de Infraestructura Crítica"
+          />
+          <h3><span>S</span>ISTEMAS CRÍTICOS</h3>
+          <!-- <h3 style="font-size: 1.1rem;"><span>S</span>ISTEMAS CRÍTICOS</h3> -->
+          <div>
+            <a
+              title="Más información sobre Sistemas Críticos"
+              class="boton_mostrar"
+              href="./assets/html/sistemasCriticos.html"
+              >Leer Más</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            loading="lazy"
+            itemprop="image"
+            src="./assets/img/cards/Seguridad.png"
+            alt="Seguridad Electrónica y Telecomunicaciones"
+          />
+          <h3 class="telco-subtitulo"><span>S</span>EGURIDAD & REDES</h3>
+          <div>
+            <a
+              title="Más información sobre Seguridad y Redes"
+              class="boton_mostrar"
+              href="./assets/html/seguridadYRedes.html"
+              >Leer Más</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------>
+    <!-- Sección CLIENTES         -->
+    <!------------------------------>
+
+    <section class="clients" id="clients">
+      <div class="title">
+        <h2 class="scroll-title">
+          <span><i>La mejor carta de presentación...</i></span>
+          Nuestros Clientes
+        </h2>
+      </div>
+      <div class="clientes">
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/cargill.jpg"
+                alt="Cargill de Venezuela"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Control Acceso</h2>
+                <p>
+                  Implementación a nivel nacional, sistemas Control de Acceso,
+                  en 8 de sus 16 plantas. Incluyó: Instalación de PLCs, software
+                  de monitoreo, torniquetes, barreras vehiculares, cerraduras,
+                  lectoras de tarjetas, biométricas, Obras civiles, tubería y
+                  cableado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/locatel2.png"
+                alt="Locatel de Venezuela"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Vídeo Seguridad</h2>
+                <p>
+                  Instalación y Mantenimiento sistemas de vídeo cámaras de
+                  seguridad, en el 60% de la red nacional de tiendas del
+                  Cliente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/GN.jpg"
+                alt="Guardia Nacional de Venezuela"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Telecomunicaciones</h2>
+                <p>
+                  Re-ingeniería del proyecto "TETRA" de telecomunicaciones por
+                  Microondas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/cavim.png"
+                alt="CAVIM de Venezuela"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Networking</h2>
+                <p>
+                  Levantamiento planimétrico, físico y posterior desarrollo del
+                  plan de mantenimiento de la red de Fibra Óptica de 10 Km del
+                  Cliente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/metro.png"
+                alt="Metro de Caracas"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Control de Acceso y Vídeo Seguridad</h2>
+                <p>
+                  Instalación en la sub-estación Metro Silencio, de un sistema
+                  automatizado de apertura de puerta, transmisión remota del
+                  vídeo de cámaras y disparos de alarmas al centro de monitoreo
+                  (Caño Amarillo).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/bancoTesoro.png"
+                alt="Banco del Tesoro"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Telecomunicaciones</h2>
+                <p>
+                  Instalación 1) Central telefónica de 15 líneas entrantes en la
+                  sucursal "La Castellana" 2) Radio bases trianguladas de
+                  enlaces Microondas para interconectar dicha central telefónica
+                  con la sucursal "Los Palos Grandes".
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/desca.png"
+                alt="Desca"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Control de Acceso</h2>
+                <p>
+                  Sistema de control peatonal para su sede principal, el cual
+                  contempló la instalación de torniquetes electrónicos gemelos
+                  tipo "Flap Barriers"; pioneros en su momento en Venezuela.
+                  Incluyó: PLC, software y torniquetes Rhinopaths.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/diadia.png"
+                alt="Supermecados Dia a Dia"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Control Acceso</h2>
+                <p>
+                  Instalación y mantenimiento de PLCs de C/A, software de
+                  control Rosslare, lectoras biométricas, para el control del
+                  flujo peatonal y acceso a las oficinas de su sede principal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/cegasa.png"
+                alt="Industrias CEGASA"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Telecomunicaciones y Seguridad Electrónica</h2>
+                <p>
+                  Instalación 1) 24 cámaras de seguridad a lo largo del complejo
+                  industrial 2) Radio base microondas para transmisión de vídeo
+                  cámaras 3) Sistema de C/A en la sede del edificio principal
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/minci.jpg"
+                alt="Ministerio de Comunicacion e Informacion"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Vídeo Seguridad</h2>
+                <p>
+                  1) Instalación de 64 cámaras de vídeo seguridad, incluido el
+                  centro de monitoreo y administración 2) Interconexión de
+                  centros de control y monitoreo ubicados en distintos
+                  edificios, a través de la implementación de un enlace de Fibra
+                  Óptica.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/interbank.png"
+                alt="Banco Interbank"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Telecomunicaciones</h2>
+                <p>
+                  Instalación enlace DPL para interconectar el centro de datos
+                  del Banco con el del "Banco Republica". Incluyó la
+                  configuración, en ambos lados, del software (IBM ACF/VTAM)
+                  corriendo en IBM Mainframes IBM (sistemas operativos MVS/ESA).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/fitven.png"
+                alt="Feria Internacional de Turismo - FITVEN"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Telecomunicaciones y Vídeo Seguridad</h2>
+                <p>
+                  Instalación plataforma de Microondas para transmisión de vídeo
+                  de cámaras de seguridad desde el complejo "Las 5 Aguilas
+                  Blancas", hacia el centro de control en el Estadio
+                  Metropolitano; durante el evento turistico "FITVEN 2015" en
+                  Mérida.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/miCasa.jpg"
+                alt="Banco Mi Casa EAP"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Telecomunicaciones y Networking</h2>
+                <p>
+                  1) Diseño e instalación red LAN en su sede principal 2)
+                  Desarrollo de interconexión fisíca y lógica entre Mi Casa EAP
+                  (Mainframe IBM AS/400) y Corporación VISA, para el control del
+                  sistema de tarjetas de credito.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/policiaVargas.jpg"
+                alt="Policia del Estado Vargas"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Telecomunicaciones y Networking</h2>
+                <p>
+                  1) Diseño e instalación red LAN de su sede principal 2)
+                  Instalación de central telefónica de 16 entrantes y 48
+                  extensiones c) Interconexión de dicha central telefónica con
+                  el sistema nacional PSTN a través de enlaces Microondas
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/inatur.png"
+                alt="Instituto Nacional de Turismo"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Vídeo Seguridad</h2>
+                <p>
+                  Elaboración de los términos de referencia para la cotización
+                  del proyecto "Repotenciación sistema de vídeo cámaras de
+                  seguridad", en la sede principal del cliente (Caracas).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/cantv.png"
+                alt="CANTV"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Telecomunicaciones</h2>
+                <p>
+                  Sub-contratados para la instalación de enlaces GSM y SDH en la
+                  región Occidente y Centro-LLanos de Venezuela.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/vencemos.jpg"
+                alt="Cementera Vencemos"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Control de Acceso y Vídeo Seguridad</h2>
+                <p>
+                  Elaboración de los términos de referencia para la cotización
+                  de los proyectos "Instalación de Barreras Vehiculares y
+                  Sistema de Vídeo Cámaras de Seguridad", a lo largo del
+                  complejo industrial.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/warairaRepano.png"
+                alt="Teleferico de Caracas o Waraira Repano"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Control de Acceso y Vídeo Seguridad</h2>
+                <p>
+                  Elaboración de los términos de referencia para la cotización
+                  de los proyectos "Repotenciación de las Barreras Vehiculares y
+                  Cámaras de Vídeo Seguridad", a lo largo del complejo y áreas
+                  administrativas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/movistar.png"
+                alt="Telefonica de Venezuela o MOVISTAR"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Telecomunicaciones</h2>
+                <p>
+                  Sub-contratados para la instalación de abonados de telefonía
+                  básica en el Litoral Central, utilizando la tecnología AIRLOOP
+                  de Lucent Technology.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/nokia.png"
+                alt="Nokia de Venezuela"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Telecomunicaciones</h2>
+                <p>
+                  Sub-contratados para la implementación de radio bases GSM –
+                  SWAP en la region Occidental de Venezuela
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/TorreABA.jpg"
+                alt="Centro Empresarial Torre ABA"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Torre Empresarial</h2>
+                <p>
+                  Instalación 1) 64 vídeo cámaras de seguridad 2) 6 Paneles PLC
+                  de C/A, software de control, torniquete, barrera vehicular,
+                  cerraduras, lectoras de tarjetas, biométricos 3) Alarma contra
+                  Robo 4) Obras civiles, tubería y cableado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/TorreTorreon.jpg"
+                alt="Centro Empresarial Torre Torreon"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Torre Empresarial</h2>
+                <p>
+                  Mantenimiento 1) Sistema de vídeo cámaras de seguridad 2)
+                  Sistema de Control de Acceso 3) Instalación de Cerco Eléctrico
+                  perimetral de 600 mts, con calidad industrial COVENIN.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/edifTulipanes.jpg"
+                alt="Edificio residencial Los Tulipanes"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Edificio Residencial</h2>
+                <p>
+                  Instalación de sistema de vídeo seguridad de 8 cámaras.
+                  Incluyó: Centro de monitoreo, acceso a Internet, monitoreo
+                  remoto autorizado vía celular, obras civiles, tubería y
+                  cableado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/clientes/TorreCastellana.jpg"
+                alt="Centro Empresarial Torre La Castellana"
+              />
+            </div>
+            <div class="contentBx">
+              <div>
+                <h2>Torre Empresarial</h2>
+                <p>
+                  Instalación Sistema de control peatonal para la entrada de la
+                  Torre, básados en torniquetes HENFOR y PLC Rosslare. Incluyó:
+                  PLCs, software, equipos, obras civiles, tubería y cableado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------->
+    <!--: Sección GALERÍA Fotos de OBRAS -->
+    <!------------------------------------->
+
+    <section class="galeria" id="galeria">
+      <div class="title">
+        <h2 class="scroll-title">
+          <span><i>...pequeña muestra de nuestro trabajo</i></span>
+          Obras Realizadas
+        </h2>
+      </div>
+
+      <div class="container_Galeria">
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img1.jpg"
+                alt="instalacion de antenas de microondas en torres de telecomunicaciones"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img2.jpg"
+                alt="instalacion de torniquetes en lobby de centro empresarial"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img3.jpg"
+                alt="instalacion profesional de video camaras de seguridad en exteriores"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img4.jpg"
+                alt="instalacion de mastil y equipamiento de sistema de video camaras de seguridad urbana"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img5.jpg"
+                alt="instalacion de torniquetes electronicos o flap barriers en oficina lujosa"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img6.jpg"
+                alt="instalacion profesional de camara PTZ en exteriores"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img7.jpg"
+                alt="instalacion de sistemas de alarmas y control de acceso en lobby de centro empresarial"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img8.jpg"
+                alt="instalacion de barrera vehicular en estacionamiento publico"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img9.jpg"
+                alt="instalacion de sistemas de video portero y barrera vehicular para control de acceso vehicular"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img10.jpg"
+                alt="instalacion de centro de monitoreo de camaras de video seguridad en centro empresarial"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img11.jpg"
+                alt="instalacion profesional de centro de control y administracion de sistema de video camaras de seguridad"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img12.jpg"
+                alt="reparacion y mantenimiento de camaras de video seguridad"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img13.jpg"
+                alt="instalacion de torniquetes y puertas peatonales y carga en lobby de centro empresarial"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img14.jpg"
+                alt="instalacion de video camaras de seguridad en posada turistica"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="image">
+              <img
+                loading="lazy"
+                itemprop="image"
+                src="./assets/img/galeria/img15.jpg"
+                alt="instalacion de video portero para control de acceso de persona y personal en oficina lujosa"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── LIGHTBOX DIALOG (galería) ─────────────────────── -->
+    <dialog
+      class="gallery-lightbox"
+      id="galleryLightbox"
+      aria-label="Imagen ampliada"
+    >
+      <button
+        class="gallery-lightbox__close"
+        id="closeLightbox"
+        aria-label="Cerrar"
+      >
+        <i class="ri-close-line"></i>
+      </button>
+      <img src="" alt="" class="gallery-lightbox__img" id="lightboxImg" />
+      <p class="gallery-lightbox__caption" id="lightboxCaption"></p>
+    </dialog>
+
+    <!--: Footer section  -->
+
+    <div class="footer" id="footer">
+      <div class="main">
+        <div class="contenedor">
+          <div class="comun nosotros">
+            <h2>Nosotros</h2>
+            <p>
+              Consultores especializados en desarrollo de software,
+              automatizaciones & chatbots; diseño e instalación de sistemas
+              críticos de seguridad: Control de accesos, torniquetes, barreras
+              vehiculares; redes de telecomunicaciones por microondas:
+              instalación de radio bases, hotspot para WiFi, redes.
+            </p>
+          </div>
+          <div class="comun linkSecundarios">
+            <h2>Enlaces</h2>
+            <ul>
+              <li>
+                <a href="./assets/html/nosotros.html" class="uno">Nosotros</a>
+              </li>
+              <li class="servicios_link">
+                <a href="./assets/html/servicios.html" class="dos"
+                  >Portafolio Servicios</a
+                >
+              </li>
+              <li>
+                <a href="./assets/html/automatizaciones.html" class="tres"
+                  >IA & Automatización</a
+                >
+              </li>
+              <li>
+                <a href="./assets/html/sistemasCriticos.html" class="cuatro"
+                  >Sistemas Críticos</a
+                >
+              </li>
+              <li>
+                <a href="./assets/html/seguridadYRedes.html" class="cinco"
+                  >Seguridad & Redes</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="comun mapa">
+            <h2>Ubicación</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.240354281702!2d-66.84950348580871!3d10.48170926743199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a59d5ecd7f4cb%3A0xc92b6111141e787b!2sCYCS%20%26%20Co.%20Ingenier%C3%ADa%20e%20Instalaciones!5e0!3m2!1ses-419!2sve!4v1665662576564!5m2!1ses-419!2sve"
+              width="600"
+              height="450"
+              class="mapa-iframe"
+              allowfullscreen=""
+              loading="lazy"
+              title="Mapa de ubicación de CYCS & Co. en Chuao, Las Mercedes, Caracas"
+            ></iframe>
+          </div>
+          <div class="comun contactos">
+            <h2>Contacto</h2>
+            <ul class="informacion">
+              <li>
+                <span
+                  ><i class="fas fa-map-marker" aria-hidden="true"></i
+                ></span>
+                <span
+                  >Av. Veracruz, calle Auyantepuy, <br />Edificio PWC,
+                  <br />Piso 7, Ofic. 7-A, <br />Chuao, Urb. Las Mercedes,<br />Caracas,
+                  Venezuela</span
+                >
+              </li>
+              <li>
+                <span><i class="fas fa-phone" aria-hidden="true"></i></span>
+                <p>
+                  <a href="Phone:+584143246396">(+58) 414 324 63 96</a><br />
+                </p>
+              </li>
+              <li>
+                <span><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                <p>
+                  <a
+                    href="mailto:cycs.ingenieria@gmail.com?&subject=Requerimiento/Contacto%20proveniente%20del%20Website!"
+                    >cycs.ingenieria@gmail.com</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyrightTexto">
+        <p>Copyright &copy; Carlos Colmenares A. | Derechos Reservados</p>
+      </div>
+    </div>
+
+    <!--* SCROLL UP (Icono flecha subir) -->
+    <a
+      href="#"
+      class="scrollup"
+      id="scroll-up"
+      title="Volver arriba"
+      aria-label="Volver arriba"
+    >
+      <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!--: Vite Entry Point -->
+    <script type="module" src="/assets/js/app.js"></script>
+
+    <!--: Begin of Chaport Live Chat code -->
+    <script type="text/javascript">
+      window.chaportConfig = { 
+        appId: "62c2e668ae84592f309849bb", 
+        locale: "es",
+        language: "es" // Refuerzo para algunos motores de traducción
+      };
+
+      (function (w, d, v3) {
+        if (w.chaport) return;
+        v3 = w.chaport = {}; v3._q = []; v3._l = {};
+        v3.q = function () { v3._q.push(arguments); };
+        v3.on = function (e, fn) { if (!v3._l[e]) v3._l[e] = []; v3._l[e].push(fn); };
+        var s = d.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://app.chaport.com/javascripts/insert.js";
+        var ss = d.getElementsByTagName("script")[0]; ss.parentNode.insertBefore(s, ss);
+      })(window, document);
+    </script>
+    <!--! End of Chaport Live Chat code -->
+  </body>
+</html>

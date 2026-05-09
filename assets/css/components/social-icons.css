@@ -1,0 +1,47 @@
+/* ============================================================
+   CYCS & Co. — Social Icons v2.0
+   ============================================================ */
+
+.social_Icon {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social_Icon a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: var(--radius-full);
+  background: var(--surface-overlay);
+  border: 1px solid var(--surface-border);
+  color: var(--text-secondary);
+  font-size: 1rem;
+  transition: background var(--transition-fast), color var(--transition-fast),
+              transform var(--transition-fast), border-color var(--transition-fast);
+  text-decoration: none;
+}
+
+.social_Icon a:hover {
+  transform: translateY(-3px);
+  opacity: 1;
+}
+
+.social_Icon a.fa-twitter:hover,
+.social_Icon a .fa-twitter { color: var(--color-twitter); }
+.social_Icon a.fa-instagram:hover,
+.social_Icon a .fa-instagram { color: var(--color-instagram); }
+.social_Icon a.fa-linkedin-in:hover,
+.social_Icon a .fa-linkedin-in { color: var(--color-linkedin); }
+.social_Icon a.fa-whatsapp:hover,
+.social_Icon a .fa-whatsapp { color: var(--color-whatsapp); }
+
+.social_Icon a:hover { border-color: currentColor; background: transparent; }
+
+/* Mobile */
+@media screen and (max-width: 414px) {
+  .social_Icon [class*="fa-"] { font-size: 1.2rem; }
+}

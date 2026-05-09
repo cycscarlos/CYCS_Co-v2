@@ -1,0 +1,38 @@
+/* ============================================================
+   CYCS & Co. — Typography v2.0
+   DM Sans (display + body) — moderna, legible, técnica
+   ============================================================ */
+
+/* Google Fonts: DM Sans */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap");
+
+/* Fuentes locales (fallback / uso especial) */
+@font-face {
+  font-family: "Bailey";
+  font-display: swap;
+  src: url(../../fonts/Bailey.otf);
+}
+@font-face {
+  font-family: "DancingScript";
+  font-display: swap;
+  font-weight: 400;
+  src: url(../../fonts/DancingScript-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url(../../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url(../../fonts/OpenSans-Regular.ttf),
+       url(../../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url(../../fonts/Raleway-Medium.ttf),
+       url(../../fonts/Raleway-SemiBold.ttf),
+       url(../../fonts/Raleway-Bold.ttf);
+}

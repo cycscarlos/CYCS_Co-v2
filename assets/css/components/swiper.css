@@ -1,0 +1,257 @@
+/* ============================================================
+   CYCS & Co. — Swiper Hero v2.1
+   Hero fullscreen: swiper como fondo, texto en overlay
+   ============================================================ */
+
+/* ── HERO WRAPPER ────────────────────────────────────────────── */
+/* Contenedor que une swiper (fondo) + hero-content (overlay) */
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 560px;
+  overflow: hidden;
+}
+
+/* ── SLIDESHOW 1 — ocupa todo el hero-wrapper ───────────────── */
+.slideshow1 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.slideshow1 .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow1 .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Overlay oscuro sobre las imágenes para legibilidad del texto */
+.slideshow1::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(8, 14, 24, 0.82) 0%,
+    rgba(8, 14, 24, 0.55) 50%,
+    rgba(8, 14, 24, 0.25) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ── HERO CONTENT OVERLAY ────────────────────────────────────── */
+.hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: calc(var(--header-height) + var(--space-10)) var(--space-12) var(--space-10);
+  max-width: 780px;
+  pointer-events: none; /* let swiper receive touch/drag events */
+}
+
+/* re-enable clicks on buttons/links inside */
+.hero-content a,
+.hero-content button {
+  pointer-events: all;
+}
+
+/* Eyebrow label */
+.hero-content__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brand-primary);
+  margin-bottom: var(--space-4);
+}
+.hero-content__eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 2px;
+  background: var(--brand-primary);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* Main title */
+.hero-content__title {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: var(--space-5);
+  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+}
+.hero-content__title em {
+  font-style: normal;
+  color: var(--brand-primary);
+}
+
+/* Subtitle */
+.hero-content__subtitle {
+  font-size: var(--text-lg);
+  color: rgba(237, 242, 247, 0.85);
+  line-height: 1.65;
+  margin-bottom: var(--space-8);
+  max-width: 520px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.3);
+}
+
+/* CTA buttons row */
+.hero-content__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.btn-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.85rem var(--space-8);
+  background: var(--brand-primary);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--font-semi-bold);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--brand-primary);
+  text-decoration: none;
+  transition: background var(--transition-base), transform var(--transition-base),
+              box-shadow var(--transition-base);
+  white-space: nowrap;
+}
+.btn-hero-primary:hover {
+  background: #e03d00;
+  border-color: #e03d00;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255,76,0,0.45);
+  color: #fff;
+  opacity: 1;
+}
+
+.btn-hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.85rem var(--space-8);
+  background: transparent;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+  border-radius: var(--radius-md);
+  border: 2px solid rgba(255,255,255,0.45);
+  text-decoration: none;
+  transition: border-color var(--transition-base), background var(--transition-base),
+              transform var(--transition-base);
+  white-space: nowrap;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+.btn-hero-secondary:hover {
+  border-color: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+  color: #fff;
+  opacity: 1;
+}
+
+/* ── NAVEGACIÓN prev/next ────────────────────────────────────── */
+.slideshow1 .swiper-button-next,
+.slideshow1 .swiper-button-prev {
+  color: rgba(255,255,255,0.75);
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.1);
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255,255,255,0.2);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+.slideshow1 .swiper-button-next:hover,
+.slideshow1 .swiper-button-prev:hover {
+  background: var(--brand-primary);
+  color: #fff;
+  border-color: var(--brand-primary);
+}
+.slideshow1 .swiper-button-next::after,
+.slideshow1 .swiper-button-prev::after {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+/* ── PAGINACIÓN ─────────────────────────────────────────────── */
+.slideshow1 .swiper-pagination {
+  z-index: 3;
+  bottom: var(--space-6);
+}
+.swiper-pagination-bullet {
+  background: rgba(255,255,255,0.5);
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  transition: width var(--transition-base), background var(--transition-base);
+}
+.swiper-pagination-bullet-active {
+  background: var(--brand-primary);
+  width: 24px;
+  border-radius: var(--radius-full);
+}
+
+/* ── ELEGANT SHADOW TITLE (legacy, oculto) ───────────────────── */
+.mainTitle { display: none; }
+h2.elegantshadow { display: none; }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────── */
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    padding: calc(var(--header-height) + var(--space-8)) var(--space-8) var(--space-8);
+    max-width: 640px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-wrapper { height: 92vh; min-height: 480px; }
+  .hero-content {
+    padding: calc(var(--header-height) + var(--space-6)) var(--space-5) var(--space-6);
+    max-width: 100%;
+    justify-content: flex-end;
+    padding-bottom: var(--space-16);
+  }
+  .hero-content__title { font-size: var(--text-3xl); }
+  .hero-content__subtitle { font-size: var(--text-base); }
+  .slideshow1 .swiper-button-next,
+  .slideshow1 .swiper-button-prev { display: none; }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-wrapper { height: 88vh; min-height: 420px; }
+  .hero-content__title { font-size: var(--text-2xl); }
+  .hero-content__eyebrow { font-size: var(--text-xs); }
+  .hero-content__subtitle { font-size: var(--text-sm); margin-bottom: var(--space-5); }
+  .btn-hero-primary,
+  .btn-hero-secondary { padding: 0.75rem var(--space-5); font-size: var(--text-sm); }
+}

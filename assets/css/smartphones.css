@@ -1,0 +1,104 @@
+/* ============================================================
+   CYCS & Co. — Responsive Media Queries v2.0
+   Mobile-first progressive enhancement
+   ============================================================ */
+
+/* ── iPAD PRO / LANDSCAPE (max 1024px) ──────────────────────── */
+@media screen and (max-width: 1024px) {
+  header { padding: 0; }
+}
+
+/* ── TABLET PORTRAIT (max 768px) ────────────────────────────── */
+/*.nav__dark rules MOVED to header.css to avoid duplication */
+
+/* ── LARGE PHONE (max 540px) ────────────────────────────────── */
+@media screen and (max-width: 540px) {
+  h2.elegantshadow { font-size: var(--text-xl); }
+  .profile { flex-direction: column; }
+  .profile-title { font-size: 1.4rem; margin: var(--space-2); }
+  .profile-title span { font-size: 0.85rem; }
+}
+
+/* ── SMALL PHONE (max 500px) ────────────────────────────────── */
+@media screen and (max-width: 500px) {
+  h2.elegantshadow { font-size: var(--text-xl); padding: var(--space-8) 0; }
+  .cards .title h3 { font-size: var(--text-xl); }
+  .clients .title .scroll-title { font-size: var(--text-2xl); }
+  .galeria .title .scroll-title { font-size: var(--text-2xl); }
+  .proveedores .title .scroll-title { font-size: var(--text-2xl); }
+  .nav__link { font-size: var(--text-sm); }
+  .nav__menu { width: 75%; }
+}
+
+/* ── iPHONE XS MAX (max 414px) ──────────────────────────────── */
+@media screen and (max-width: 414px) {
+  .nav__menu { padding: var(--space-4); }
+  .nav__list { flex-direction: column; gap: var(--space-3); }
+
+  h2.elegantshadow { text-shadow: none; font-size: var(--text-lg); padding: var(--space-8) 0; }
+
+  .banner_Icon { bottom: 1.5rem; right: 1.5rem; }
+  .whatsapp_Texto span { display: none; }
+
+  .clients .title .scroll-title { font-size: var(--text-2xl); line-height: 1.3; }
+  .clients .title { margin: 0 0 var(--space-8); }
+
+  .galeria .title .scroll-title { font-size: var(--text-2xl); line-height: 1.3; }
+  .galeria .title { margin: 0 0 var(--space-6); }
+
+  .container__width { width: 90%; margin: 0 auto; }
+
+  .profile { flex-direction: column; }
+  .profile-title { font-size: 1.1rem; margin: var(--space-2); }
+  .profile-title span { font-size: 0.75rem; }
+  .profile-details { font-size: 0.8rem; line-height: 1.6; max-width: 450px; margin: 0 var(--space-5); }
+}
+
+/* ── iPHONE 12 (max 390px) ───────────────────────────────────── */
+@media screen and (max-width: 390px) {
+  h2.elegantshadow { font-size: var(--text-base); padding: var(--space-8) 0; }
+}
+
+/* ── iPHONE 6/7/8 (max 375px) ───────────────────────────────── */
+@media screen and (max-width: 375px) {
+  .nav__menu { width: 75%; padding: var(--space-4); color: var(--text-secondary); }
+  .nav__list { flex-direction: column; gap: var(--space-3); color: var(--text-secondary); }
+  .nav__dark { bottom: var(--space-10); }
+  .clients .title .scroll-title { font-size: var(--text-xl); }
+  .galeria .title .scroll-title { font-size: var(--text-xl); }
+  .proveedores .title .scroll-title { font-size: var(--text-xl); }
+}
+
+/* ── SAMSUNG GALAXY S5 (max 360px) ──────────────────────────── */
+@media screen and (max-width: 360px) {
+  h2.elegantshadow { font-size: var(--text-base); padding: var(--space-8) 0; }
+  .clients .title .scroll-title { font-size: var(--text-xl); }
+  .galeria .title .scroll-title { font-size: var(--text-xl); }
+  .proveedores .title .scroll-title { font-size: var(--text-xl); }
+}
+
+/* ── DESKTOP ─────────────────────────────────────────────────── */
+@media screen and (min-width: 769px) {
+  body { margin: 0; }
+  .nav { height: calc(var(--header-height) + 1.5rem); }
+  .nav__link { color: var(--text-secondary); text-transform: initial; }
+  .nav__link:hover { color: var(--text-primary); opacity: 1; }
+  .nav__dark { position: initial; }
+  .nav__menu { display: flex; align-items: center; column-gap: var(--space-6); }
+  .nav__list { flex-direction: row; column-gap: 0; }
+  .nav__toggle, .nav__close { display: none; }
+  .change-theme { color: var(--text-secondary); }
+}
+
+@media screen and (min-width: 1025px) {
+  .container { margin-left: auto; margin-right: auto; }
+  .nav__dark span { padding-right: var(--space-1); }
+}
+
+@media screen and (min-width: 1200px) {
+  .container { max-width: 1200px; }
+}
+
+@media screen and (min-height: 721px) {
+  body { margin: 0; }
+}

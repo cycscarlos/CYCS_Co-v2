@@ -1,0 +1,220 @@
+/* ============================================================
+   CYCS & Co. — Footer v2.0
+   Fondo sólido · 4 columnas · Responsive acordeón
+   ============================================================ */
+
+.footer {
+  font-family: var(--font-body);
+  margin-top: var(--space-16);
+  background-color: var(--neutral-900);
+  border-top: 1px solid var(--surface-border);
+}
+
+.footer .title {
+  margin-bottom: var(--space-4);
+}
+.footer .scroll-title {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+/* ── MAIN CONTAINER ─────────────────────────────────────────── */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.main .contenedor {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: var(--space-6);
+  color: var(--text-secondary);
+  padding: var(--space-10) var(--space-8) var(--space-8);
+  width: 100%;
+  max-width: 1200px;
+}
+
+.main .contenedor .comun { flex: 1; min-width: 0; }
+.main .contenedor .comun.nosotros { flex: 1.4; }
+
+/* ── COLUMN HEADERS ─────────────────────────────────────────── */
+.main .contenedor h2 {
+  position: relative;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-3);
+}
+.main .contenedor h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 36px;
+  height: 2px;
+  background: var(--brand-primary);
+  border-radius: var(--radius-full);
+}
+
+/* ── NOSOTROS COLUMN ────────────────────────────────────────── */
+.main .contenedor .nosotros p {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  line-height: 1.75;
+  margin-top: var(--space-3);
+}
+.main .contenedor .nosotros p span {
+  color: var(--text-primary);
+  font-weight: var(--font-medium);
+}
+
+/* ── LINKS COLUMN ───────────────────────────────────────────── */
+.linkSecundarios { flex: 0.9; }
+.linkSecundarios ul { margin-top: var(--space-2); }
+.linkSecundarios ul li { margin-bottom: var(--space-3); }
+.linkSecundarios ul li a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  text-decoration: none;
+  transition: color var(--transition-fast), gap var(--transition-fast);
+}
+.linkSecundarios ul li a::before {
+  content: '›';
+  color: var(--brand-primary);
+  font-size: 1.1em;
+  line-height: 1;
+  position: static; /* override legacy absolute positioning */
+  flex-shrink: 0;
+}
+.linkSecundarios ul li a:hover {
+  color: var(--text-primary);
+  gap: var(--space-3);
+  opacity: 1;
+}
+/* Remove positional legacy classes (uno, dos, etc.) from interfering */
+.linkSecundarios ul li a.uno,
+.linkSecundarios ul li a.dos,
+.linkSecundarios ul li a.tres,
+.linkSecundarios ul li a.cuatro,
+.linkSecundarios ul li a.cinco,
+.linkSecundarios ul li a.seis { margin: 0; }
+.linkSecundarios ul li a.uno::before,
+.linkSecundarios ul li a.dos::before,
+.linkSecundarios ul li a.tres::before,
+.linkSecundarios ul li a.cuatro::before,
+.linkSecundarios ul li a.cinco::before,
+.linkSecundarios ul li a.seis::before {
+  top: auto;
+  position: static;
+  color: var(--brand-primary);
+}
+
+/* ── MAPA COLUMN ────────────────────────────────────────────── */
+.mapa { flex: 1.4; }
+.mapa iframe,
+.mapa-iframe {
+  width: 100%;
+  height: 220px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--shadow-md);
+  margin-top: var(--space-3);
+  display: block;
+}
+
+/* ── CONTACTO COLUMN ─────────────────────────────────────────── */
+.contactos { flex: 1; }
+.contactos .informacion { margin-top: var(--space-3); }
+.contactos .informacion li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.contactos .informacion li span:first-child {
+  color: var(--brand-primary);
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.contactos .informacion li a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+.contactos .informacion li a:hover { color: var(--brand-primary); opacity: 1; }
+
+/* ── COPYRIGHT ───────────────────────────────────────────────── */
+.copyrightTexto {
+  width: 100%;
+  padding: var(--space-4) var(--space-8);
+  text-align: center;
+  color: var(--text-muted);
+  background-color: var(--neutral-950);
+  border-top: 1px solid var(--surface-border);
+  font-size: var(--text-xs);
+  letter-spacing: 0.03em;
+}
+.copyrightTexto span {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+/* ── SCROLL UP ────────────────────────────────────────────────── */
+/* (now defined in reset.css — legacy fallback) */
+.scrollup {
+  position: fixed;
+  right: 1.5rem;
+  bottom: -30%;
+  background: var(--brand-primary);
+  border-radius: var(--radius-md);
+  padding: 0.45rem 0.5rem;
+  display: inline-flex;
+  opacity: 0.9;
+  z-index: var(--z-tooltip);
+  transition: bottom var(--transition-base), box-shadow var(--transition-base),
+              transform var(--transition-base);
+  box-shadow: var(--shadow-md);
+}
+.scrollup:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow);
+}
+.scrollup__icon { color: #fff; font-size: 1.1rem; }
+.show-scroll { bottom: 5.5rem; }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────── */
+@media screen and (max-width: 1024px) {
+  .main .contenedor { gap: var(--space-4); padding: var(--space-8) var(--space-5); }
+}
+
+@media screen and (max-width: 768px) {
+  .main .contenedor {
+    flex-direction: column;
+    gap: var(--space-8);
+    padding: var(--space-8) var(--space-5);
+  }
+  .main .contenedor .comun,
+  .main .contenedor .comun.nosotros,
+  .linkSecundarios,
+  .mapa,
+  .contactos {
+    flex: none;
+    width: 100%;
+  }
+  .mapa iframe, .mapa-iframe { height: 200px; }
+  .copyrightTexto { padding: var(--space-4); }
+}

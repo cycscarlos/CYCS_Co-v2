@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>CYCS & Co. | IA & Automatizaciones</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="https://carlos-colmenares-a.netlify.app" />
+    <meta name="description" content="Automatización de procesos con Inteligencia Artificial: chatbots, agentes virtuales, flujos de trabajo automáticos y análisis de datos en tiempo real." />
+    <meta name="robots" content="index, follow, all" />
+    <meta name="theme-color" content="#ff4c00" />
+    <link rel="apple-touch-icon" href="https://cycs.netlify.app/img/favicon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@cycsingenieria" />
+    <meta name="twitter:title" content="CYCS & Co. | IA & Automatizaciones" />
+    <meta name="twitter:description" content="Automatización de procesos con Inteligencia Artificial: chatbots, agentes virtuales y análisis de datos en tiempo real." />
+    <meta name="twitter:image" content="https://cycs.netlify.app/img/about.png" />
+    <meta property="og:url" content="https://cycs.netlify.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CYCS & Co. | IA & Automatizaciones" />
+    <meta property="og:description" content="Automatización de procesos con Inteligencia Artificial: chatbots, agentes virtuales y análisis de datos en tiempo real." />
+    <meta property="og:image" content="https://cycs.netlify.app/img/about.png" />
+    <meta itemprop="name" content="CYCS & Co. | IA & Automatizaciones" />
+    <link rel="canonical" href="https://cycs.netlify.app/assets/html/automatizaciones.html" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!--: CSS General Styles -->
+    <link rel="stylesheet" href="/assets/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <style>
+      #preloader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #080e18; display: flex; justify-content: center; align-items: center; z-index: 9999999; transition: opacity 0.5s ease; }
+      .loader { width: 50px; height: 50px; border: 4px solid rgba(255, 255, 255, 0.1); border-left-color: #ff4c00; border-radius: 50%; animation: spin 1s linear infinite; }
+      @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+      .preloader-hidden { opacity: 0 !important; pointer-events: none !important; visibility: hidden !important; }
+    </style>
+    <script>
+      function hidePreloader() {
+        var preloader = document.getElementById('preloader');
+        if (preloader) {
+          preloader.classList.add('preloader-hidden');
+          document.body.style.overflow = 'auto';
+          setTimeout(function() { preloader.remove(); }, 500);
+        }
+      }
+      setTimeout(hidePreloader, 3000);
+      window.addEventListener('load', hidePreloader);
+    </script>
+  </head>
+  <body class="loading">
+    <!-- Preloader -->
+    <div id="preloader"><div class="loader"></div></div>
+    <div class="mainBox" id="home">
+
+      <!-- Dynamic Components -->
+      <div data-component="header-tech"></div>
+      <div data-component="whatsapp"></div>
+
+      <!-- ══════════════════════════════════════════════
+           SECCIÓN — IA & Automatizaciones
+           ══════════════════════════════════════════════ -->
+      <section id="security" class="security">
+        <div class="title">
+          <h2 class="scroll-title">
+            Inteligencia Artificial al servicio de su <span>Productividad</span>
+          </h2>
+        </div>
+
+        <div class="row">
+          <!-- Columna texto -->
+          <div class="col50">
+
+            <h3>Ahorro de <span>Tiempo Real</span></h3>
+            <ul class="mainUL">
+              <li>Reducción del 70% en tareas repetitivas mediante flujos automáticos</li>
+              <li>Respuestas instantáneas 24/7 sin intervención humana</li>
+              <li>Liberación de su equipo para tareas de alto valor</li>
+            </ul>
+
+            <h3>Experiencia de Cliente <span>Exponencial</span></h3>
+            <ul class="mainUL">
+              <li>Chatbots y agentes virtuales con atención personalizada en segundos</li>
+              <li>Cero tiempos de espera, cero colas de soporte</li>
+              <li>Interacción fluida en español, inglés y cualquier idioma</li>
+            </ul>
+
+            <h3>Escalabilidad <span>Sin Fricción</span></h3>
+            <ul class="mainUL">
+              <li>Atiende 1 o 10 000 usuarios simultáneos sin costo adicional</li>
+              <li>Crece con su negocio sin contratar ni capacitar nueva fuerza laboral</li>
+              <li>Implementación en días, no en meses</li>
+            </ul>
+
+            <h3>Reducción de <span>Costos Operativos</span></h3>
+            <ul class="mainUL">
+              <li>Reemplaza horas humanas por automatización inteligente</li>
+              <li>Menos errores, menos reprocesos, menos reclamaciones</li>
+              <li>ROI visible desde el primer mes de operación</li>
+            </ul>
+
+            <h3>Decisiones Basadas en <span>Datos en Tiempo Real</span></h3>
+            <ul class="mainUL">
+              <li>Cada interacción genera insights accionables</li>
+              <li>Ajustes de estrategia al instante con dashboards en vivo</li>
+              <li>Predicción de necesidades antes de que surjan</li>
+            </ul>
+
+          </div>
+
+          <!-- Columna slider -->
+          <div class="col50">
+            <div class="swiper slideshow2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img loading="auto" itemprop="image"
+                    src="../img/security/automatizacion.png"
+                    alt="IA y automatización de procesos empresariales" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div data-component="copyright"></div>
+
+      <!--: Vite Entry Point -->
+      <script type="module" src="/assets/js/app.js"></script>
+      <script>
+        setTimeout(() => document.body.classList.add('loaded'), 3000);
+      </script>
+    </div>
+    <!--: Begin of Chaport Live Chat code -->
+    <script type="text/javascript">
+      window.chaportConfig = { 
+        appId: "62c2e668ae84592f309849bb", 
+        locale: "es",
+        language: "es"
+      };
+
+      (function (w, d, v3) {
+        if (w.chaport) return;
+        v3 = w.chaport = {}; v3._q = []; v3._l = {};
+        v3.q = function () { v3._q.push(arguments); };
+        v3.on = function (e, fn) { if (!v3._l[e]) v3._l[e] = []; v3._l[e].push(fn); };
+        var s = d.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://app.chaport.com/javascripts/insert.js";
+        var ss = d.getElementsByTagName("script")[0]; ss.parentNode.insertBefore(s, ss);
+      })(window, document);
+    </script>
+  </body>
+</html>
