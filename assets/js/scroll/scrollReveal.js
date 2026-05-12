@@ -13,7 +13,7 @@ export function initScrollReveal() {
   });
 
   // Reveal animations from top
-  sr.reveal(`.proveedores, .telco, .muro`, {
+  sr.reveal(`.proveedores, .muro`, {
     origin: "top",
     interval: 100,
   });
